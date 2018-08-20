@@ -12,6 +12,9 @@
 
   <link rel="icon" type="image/png" href="images/favicon.png">
 
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
   <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
@@ -35,13 +38,13 @@
             <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item text-center pb-4 pb-lg-0">
+            <a class="nav-link" href="./reviews.html">Reviews</a>
+          </li>
+          <li class="nav-item text-center pb-4 pb-lg-0">
             <a class="nav-link" href="./samples.html">Samples</a>
           </li>
           <li class="nav-item text-center pb-4 pb-lg-0">
             <a class="nav-link" href="./packages.html">Packages</a>
-          </li>
-          <li class="nav-item text-center pb-4 pb-lg-0">
-            <a class="nav-link" href="./testimonials.html">Testimonials</a>
           </li>
         </ul>
       </div>
@@ -68,25 +71,31 @@
     <h1 class="d-block d-md-none">CANDLELIT WEDDINGS</h1>
   </header>
 
-  <div class="black-box submit-form-box">
-    <h1>TELL YOUR LOVE STORY</h1>
+  <div class="black-box pb-1">
+    <h1 class="d-none d-md-block mb-3">CANDLELIT WEDDINGS</h1>
+    <h2 class="pt-0 text-uppercase">Cinematic Films</h2>
 
-    <form method="post">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <input type="text" class="form-control" placeholder="Name*">
-        </div>
-        <div class="col-12 col-md-6">
-          <input type="text" class="form-control" placeholder="Email*">
-        </div>
+    <div class="icons">
+      <div class="icon-container">
+        <a href="./reviews.html">
+          <i class="far fa-comment-alt"></i>
+          <p>Reviews</p>
+        </a>
       </div>
-      <button type="submit" class="btn btn-primary">
-        <span class="d-none d-sm-block">Request Information</span>    
-        <span class="d-block d-sm-none">Request Info</span>
-      </button>
-    </form>
-    <p class="d-none d-md-block">You have a story to tell.&nbsp;&nbsp;Future generations want to hear it.</p>    
-    <p class="d-block d-md-none">You have a story to tell.<br>Future generations want to hear it.</p>
+      <div class="icon-container">
+        <a href="./samples.html">
+          <i class="fas fa-play-circle"></i>
+          <p>Samples</p>
+        </a>
+      </div>
+      <div class="icon-container">
+        <a href="./packages.html">
+          <i class="fas fa-box"></i>
+          <p>Packages</p>
+        </a>
+      </div>
+    </div>
+
   </div>
 
 
@@ -109,14 +118,45 @@
 
 
   
-  <div class="black-box submit-form-box">
-    <h2>"Hands down the best video I've ever seen..."</h2>
-    <button type="submit" class="btn btn-primary" onclick="window.location.href='./testimonials.html'">Testimonials</button>
+  <div class="black-box">
+    <h3>"Hands down the best video I've ever seen..."</h3>
+    <button type="submit" class="btn btn-primary" onclick="window.location.href='./reviews.html'">Reviews</button>
   </div>
 
 
 
-  <div class="footer-copyright text-center py-4 bg-black">© 2018 Candlelit Weddings</div>
+  <div class="text-center pt-2 pb-4 bg-black"> 
+    
+    <div class="section-contact">
+      <div class="row">
+        <div class="col-12">
+          <h1>Contact:</h1>
+        </div>
+      </div>
+      <div class="icons">
+        <div class="icon-container" data-toggle="tooltip" data-placement="top" title="jacob@candlelitweddings.com">
+          <a href="mailto:jacob@candlelitweddings.com">
+            <i class="far fa-envelope"></i>
+            <p>Email</p>
+          </a>
+        </div>
+        <div class="icon-container" data-toggle="tooltip" data-placement="top" title="Facebook Messenger">
+          <a href="http://m.me/candlelitweddings/">
+            <i class="fab fa-facebook-messenger"></i>
+            <p>Messenger</p>
+          </a>
+        </div>
+        <div class="icon-container" data-toggle="tooltip" data-placement="top" title="(512) 843-5437">
+          <a href="tel:1-512-843-5437">
+            <i class="fas fa-phone"></i>
+            <p>Phone</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    © 2018 Candlelit Weddings
+  </div>
 
 
 

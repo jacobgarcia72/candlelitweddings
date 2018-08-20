@@ -11,9 +11,11 @@ body {
     box-sizing: border-box;
 }
 
-a {
+a, a:hover {
   text-decoration: none !important;
+  color: inherit;
 }
+
 
 div.row, div[class*="col"] {
   margin-left: 0;
@@ -35,12 +37,7 @@ div.font-increase p, div.font-increase h1 {
   background: #1f1f1f;
 }
 
-@media (max-width: 768px){
-  div.submit-form-box {
-    padding-left: 40px !important;
-    padding-right: 40px !important;
-  }
-}
+
 input[type="text"]{
   font-size: 1.6rem;
   height: 50px;
@@ -140,11 +137,11 @@ nav {
 
 div.black-box {
   text-align: center;
-  padding: 20px 80px 40px 80px;
+  padding: 20px 60px 40px 60px;
   margin: auto;
   margin: 200px auto 250px auto;
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   display: block;
   background-color: rgba(0,0,0,.5);
 }
@@ -154,8 +151,14 @@ div.black-box h1 {
   letter-spacing: 1pt;
 }
 div.black-box h2 {
-  font-size: 20pt;
-  font-weight: 500;
+  font-size: 26pt;
+  font-weight: 100;
+  letter-spacing: 5pt;
+  padding: 15pt 0 25pt 0;
+}
+div.black-box h3 {
+  font-size: 22pt;
+  font-weight: 400;
   padding: 15pt 0 25pt 0;
 }
 div.black-box p {
@@ -165,6 +168,8 @@ div.black-box p {
 @media (max-width: 768px){
   div.black-box {
     margin: 0;
+    padding-left: 5%; 
+    padding-right: 5%; 
     max-width: 768px;
     background-color: #fafdff;
     color: #111111;
@@ -176,7 +181,14 @@ div.black-box p {
   }
   div.black-box h2 {
     font-weight: 100;
+    font-size: 20pt;
     padding-bottom: 20pt;
+    letter-spacing: 3pt;
+  }
+  div.black-box h3 {
+    font-size: 18pt;
+    font-weight: 400;
+    padding: 8pt 0 12pt 0;
   }
   div.black-box.blurb p {
     font-size: 14pt;
@@ -342,4 +354,34 @@ div.mobile-testimonials {
 div.mobile-testimonials h5 {
   color: #444444;
   margin-bottom: 36px;
+}
+
+
+
+/* icons */
+
+div.icons {
+  display: flex;
+  margin: auto;
+  margin-bottom: 36px;
+  width: 100%;
+  max-width: 500px;
+}
+div.icon-container {
+  display: block;
+  width: 33.3%;
+  text-align: center;
+}
+div.icon-container i {
+  transition-duration: 600ms;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+div.icon-container:hover i {
+  transform: rotate(360deg);
+}
+
+.tooltip-inner {
+  max-width: 350px;
 }

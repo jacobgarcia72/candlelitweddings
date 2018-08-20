@@ -18,4 +18,10 @@ $( document ).ready(function() {
     $('video.bg-video').css('opacity','1');
   });
 
+
+
+
+  $('[data-toggle="tooltip"]').tooltip();
+
+
 })
