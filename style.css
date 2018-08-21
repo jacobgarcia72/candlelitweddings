@@ -377,7 +377,14 @@ div.icon-container i {
   font-size: 3rem;
   margin-bottom: 10px;
 }
-
+@media (max-width: 576px){
+  div.section-contact div.icon-container i, div.submit-review div.icon-container i {
+    font-size: 2.6rem;
+  }
+  div.section-contact h1, div.submit-review h1 {
+    font-size: 24pt;
+  }
+}
 div.icon-container:hover i {
   transform: rotate(360deg);
 }
